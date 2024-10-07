@@ -13,6 +13,14 @@ app.get('/', (req, res) => {
     res.send("Hello world");
 })
 
+app.get('/hello', (req, res) => {
+    res.json({ msg: "Hello world!!" });
+})
+
+app.get("/baby", (req, res) => {
+    res.status(200).json({ msg: "I love you tarushi..." });
+})
+
 
 app.use("/user", userRoutes)
 
