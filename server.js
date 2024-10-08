@@ -18,7 +18,7 @@ app.get('/hello', (req, res) => {
 })
 
 app.get("/baby", (req, res) => {
-    res.status(200).json({ msg: "I love you tarushi..." });
+    res.status(200).json({ msg: "I love you!" });
 })
 
 
