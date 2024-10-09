@@ -5,8 +5,8 @@ services:
     image: postgres:13 # You can specify the PostgreSQL version here
     container_name: postgres_db # Name of the container
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: user
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: newdb
     ports:
       - "5432:5432" # Map port 5432 of the container to port 5432 on the host
